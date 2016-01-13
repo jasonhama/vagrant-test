@@ -1,0 +1,14 @@
+mkdir vagrant-test
+cd vagrant-test
+vagrant init puphpet/ubuntu1404-x64
+vagrant up
+ls /vagrant
+sudo apt-get update
+sudo apt-get install apache2
+Y
+
+
+var/www/html/index.html
+
+sudo rm -rf /var/www/html
+sudo ln -s /vagrant /var/www/html
